@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[杂货铺]]></title>
+  
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://dycg.cnblogs.com/"/>
+  <updated>2016-01-07T03:08:43.318Z</updated>
+  <id>http://dycg.cnblogs.com/</id>
+  
+  <author>
+    <name><![CDATA[东莞叔叔]]></name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[发布脚本那些事]]></title>
+    <link href="http://dycg.cnblogs.com/2016/01/07/%E5%8F%91%E5%B8%83%E8%84%9A%E6%9C%AC%E9%82%A3%E4%BA%9B%E4%BA%8B/"/>
+    <id>http://dycg.cnblogs.com/2016/01/07/发布脚本那些事/</id>
+    <published>2016-01-07T02:50:48.000Z</published>
+    <updated>2016-01-07T03:08:43.318Z</updated>
+    <content type="html"><![CDATA[<h1 id="u53D1_u5E03_u90A3_u4E9B_u4E8B"><a href="#u53D1_u5E03_u90A3_u4E9B_u4E8B" class="headerlink" title="发布那些事"></a>发布那些事</h1><p>记忆力差, 记一下从写到发布的全过程吧(也就是Hexo -&gt; github)</p>
+<h3 id="u5199_u6587_u7AE0"><a href="#u5199_u6587_u7AE0" class="headerlink" title="写文章"></a>写文章</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd blog&#30446;&#24405;&#10;hexo new post &#25991;&#31456;&#26631;&#39064;</span><br></pre></td></tr></table></figure>
+<p>在<strong>blog目录/source/_posts/</strong>下找到刚才标题的<strong>.md</strong>文章, 使用MD编辑器进行编辑</p>
+<h3 id="u672C_u5730_u9884_u89C8"><a href="#u672C_u5730_u9884_u89C8" class="headerlink" title="本地预览"></a>本地预览</h3><p>如果有必要的话<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure></p>
+<p>然后就可以打开<localhost:4000>访问了</localhost:4000></p>
+<h3 id="u751F_u6210github_u683C_u5F0F_u7684_u6587_u4EF6"><a href="#u751F_u6210github_u683C_u5F0F_u7684_u6587_u4EF6" class="headerlink" title="生成github格式的文件"></a>生成github格式的文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+<p>生成后,在 public目录下的文件就是要上传到github上的文件</p>
+<h3 id="u63D0_u4EA4_u5230Github"><a href="#u63D0_u4EA4_u5230Github" class="headerlink" title="提交到Github"></a>提交到Github</h3><p>把public目录下的文件复制到github clone下来的目录下, 替换. 或者删掉原文件,放上新文件<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add --all</span><br><span class="line">git commit -m <span class="string">"modify"</span></span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure></p>
+<h3 id="u5927_u529F_u544A_u6210"><a href="#u5927_u529F_u544A_u6210" class="headerlink" title="大功告成"></a>大功告成</h3>]]></content>
+    <summary type="html">
+    <![CDATA[<h1 id="u53D1_u5E03_u90A3_u4E9B_u4E8B"><a href="#u53D1_u5E03_u90A3_u4E9B_u4E8B" class="headerlink" title="发布那些事"></a>发布那些事</h1><p>记忆力差, 记一下从]]>
+    </summary>
+    
+      <category term="Hexo,发布" scheme="http://dycg.cnblogs.com/tags/Hexo-%E5%8F%91%E5%B8%83/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[终于在Github上安了个窝]]></title>
+    <link href="http://dycg.cnblogs.com/2016/01/07/hello-world/"/>
+    <id>http://dycg.cnblogs.com/2016/01/07/hello-world/</id>
+    <published>2016-01-07T02:30:46.990Z</published>
+    <updated>2016-01-07T02:30:46.990Z</updated>
+    <content type="html"><![CDATA[<p>经过了万般的努力,终于在Github上安了个窝,技术发展和年龄的发展一样的快呀!</p>
+<p>Markdown语言的基本语法,在此标记一下</p>
+<h3 id="u5217_u8868"><a href="#u5217_u8868" class="headerlink" title="列表"></a>列表</h3><blockquote>
+<p>代码<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="header"># 标题1</span></span><br><span class="line"><span class="header">## 标题2</span></span><br><span class="line"><span class="header">### 标题3</span></span><br></pre></td></tr></table></figure></p>
+<p>结果  </p>
+<h1 id="u6807_u98981"><a href="#u6807_u98981" class="headerlink" title="标题1"></a>标题1</h1><h2 id="u6807_u98982"><a href="#u6807_u98982" class="headerlink" title="标题2"></a>标题2</h2><h3 id="u6807_u98983"><a href="#u6807_u98983" class="headerlink" title="标题3"></a>标题3</h3><p>代码<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">* </span>列表项1</span><br><span class="line"><span class="bullet">* </span>列表项2</span><br><span class="line"><span class="bullet">* </span>列表项3</span><br></pre></td></tr></table></figure></p>
+<p>结果</p>
+<ul>
+<li>列表项1</li>
+<li>列表项2</li>
+<li>列表项3</li>
+</ul>
+<p>代码<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">1. </span>列表项1</span><br><span class="line"><span class="bullet">2. </span>列表项2</span><br><span class="line"><span class="bullet">3. </span>列表项3</span><br></pre></td></tr></table></figure></p>
+<p>结果</p>
+<ol>
+<li>列表项1</li>
+<li>列表项2</li>
+<li>列表项3</li>
+</ol>
+</blockquote>
+<h3 id="u5F15_u7528"><a href="#u5F15_u7528" class="headerlink" title="引用"></a>引用</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62; &#36825;&#26159;&#24341;&#29992;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>这是引用  </p>
+</blockquote>
+<h3 id="u94FE_u63A5_u548C_u56FE_u7247"><a href="#u94FE_u63A5_u548C_u56FE_u7247" class="headerlink" title="链接和图片"></a>链接和图片</h3><blockquote>
+<p>代码<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[<span class="link_label">百度</span>](<span class="link_url">www.baidu.com</span>)</span><br><span class="line">![<span class="link_label">百度</span>](<span class="link_url">https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png</span>)</span><br></pre></td></tr></table></figure></p>
+<p>结果<br><a href="/www.baidu.com">百度</a><br><img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png" alt="百度"></p>
+</blockquote>
+<h3 id="u7C97_u4F53_u4E0E_u659C_u4F53"><a href="#u7C97_u4F53_u4E0E_u659C_u4F53" class="headerlink" title="粗体与斜体"></a>粗体与斜体</h3><blockquote>
+<p>代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">**&#31895;&#20307;**&#10;&#26012;&#20307;&#39064;*</span><br></pre></td></tr></table></figure></p>
+<p>结果<br><strong>粗体</strong><br>斜体题*</p>
+</blockquote>
+<h3 id="u8868_u683C"><a href="#u8868_u683C" class="headerlink" title="表格"></a>表格</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">| Tables        | Are           | Cool  |&#10;| ------------- |:-------------:| -----:|&#10;| col 3 is      | right-aligned | $1600 |&#10;| col 2 is      | centered      |   $12 |&#10;| zebra stripes | are neat      |    $1 |</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>结果</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Tables</th>
+<th style="text-align:center">Are</th>
+<th style="text-align:right">Cool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>col 3 is</td>
+<td style="text-align:center">right-aligned</td>
+<td style="text-align:right">$1600</td>
+</tr>
+<tr>
+<td>col 2 is</td>
+<td style="text-align:center">centered</td>
+<td style="text-align:right">$12</td>
+</tr>
+<tr>
+<td>zebra stripes</td>
+<td style="text-align:center">are neat</td>
+<td style="text-align:right">$1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="u4EE3_u7801"><a href="#u4EE3_u7801" class="headerlink" title="代码"></a>代码</h3><p>用3个`把你的代码包裹起来</p>
+<h3 id="u5206_u5272_u7EBF"><a href="#u5206_u5272_u7EBF" class="headerlink" title="分割线"></a>分割线</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">***</span><br></pre></td></tr></table></figure>
+<p>如下:</p>
+<hr>
+<h3 id="u53CD_u659C_u6760_u8F6C_u4E49"><a href="#u53CD_u659C_u6760_u8F6C_u4E49" class="headerlink" title="反斜杠转义"></a>反斜杠转义</h3><p>*literal asterisks*</p>
+<p>\   反斜线<br>`   反引号<br>*   星号<br>_   底线<br>{}  花括号<br>[]  方括号<br>()  括弧<br>#   井字号<br>+   加号<br>-   减号<br>.   英文句点<br>!   惊叹号 </p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>经过了万般的努力,终于在Github上安了个窝,技术发展和年龄的发展一样的快呀!</p>
+<p>Markdown语言的基本语法,在此标记一下</p>
+<h3 id="u5217_u8868"><a href="#u5217_u8868" class="headerlink"]]>
+    </summary>
+    
+  </entry>
+  
+</feed>
