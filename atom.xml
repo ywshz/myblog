@@ -1,27 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title><![CDATA[杂货铺]]></title>
-  
-  <link href="/atom.xml" rel="self"/>
-  <link href="http://dycg.cnblogs.com/"/>
-  <updated>2016-01-07T03:08:43.318Z</updated>
-  <id>http://dycg.cnblogs.com/</id>
+  <subtitle><![CDATA[老猿]]></subtitle>
+  <link href="/myblog/atom.xml" rel="self"/>
+  <link href="http://ywshz.github.io/myblog/"/>
+  <updated>2016-01-07T10:40:09.451Z</updated>
+  <id>http://ywshz.github.io/myblog/</id>
   
   <author>
-    <name><![CDATA[东莞叔叔]]></name>
+    <name><![CDATA[东苑草根]]></name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA['nodejs初体验']]></title>
+    <link href="http://ywshz.github.io/myblog/2016/01/07/nodejs%E5%88%9D%E4%BD%93%E9%AA%8C/"/>
+    <id>http://ywshz.github.io/myblog/2016/01/07/nodejs初体验/</id>
+    <published>2016-01-07T10:03:29.000Z</published>
+    <updated>2016-01-07T10:40:09.451Z</updated>
+    <content type="html"><![CDATA[<p>前前后后花了一天,查了一些关于node的资料. 心态的变化是这样的: <strong> 哇!–&gt;嗯!–&gt;啊?–&gt;噢 </strong></p>
+<p>刚接触nodejs, 最关心的还是他能为我们做什么?</p>
+<blockquote>
+<p>NodeJS如是说，他创造NodeJS的目的是为了实现高性能Web服务器</p>
+</blockquote>
+<p>作者最看重的是事件机制和异步模型的优越性,而不是js. 这里我想起了<strong>nginx</strong>,目标也是成为高性能服务器. 有个网站说nginx在静态文件处理的性能上,秒杀nodejs.这一点,我没验证过,但我猜测是对的.</p>
+<p><a href="https://www.zhihu.com/question/19653241" target="_blank" rel="external">知乎</a>上有个文章,总结的NodeJS的适用和不适用的场景,可以参考</p>
+<p>入门的话, 我看了 <a href="https://nqdeng.github.io/7-days-nodejs/" target="_blank" rel="external">淘宝-7天学会Nodejs</a></p>
+<p>后来,我查资料, 说通过express这样的web框架,快速搭建一起web服务, 果然, 很快!真的很快, 但是没还摸透怎么和bootstrap之类的工具合起来用</p>
+<p>做web程序,按照传统,离不开和数据库打交道, express官网上的例子, 似乎是一个请求,打开一个连接, 不知道有没数据连接池的包可以用.</p>
+<p>下班时间到了, 中间省略很多字..</p>
+<p>总之, 今天接触下来,对Nodejs的总结如下</p>
+<blockquote>
+<p>非常适合做一些工具应用,或者低计算高并发请求的服务器,流式处理,实时监控之类的.</p>
+</blockquote>
+<p>我还发现一个库 <a href="https://github.com/mnutt/hummingbird" target="_blank" rel="external">Hummingbird</a>,看介绍说是可以为你的系统做一个用户实时跟踪的界面化统计, 太棒了, 明天再来研究.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>前前后后花了一天,查了一些关于node的资料. 心态的变化是这样的: <strong> 哇!–&gt;嗯!–&gt;啊?–&gt;噢 </strong></p>
+<p>刚接触nodejs, 最关心的还是他能为我们做什么?</p>
+<blockquote>
+<p>NodeJS]]>
+    </summary>
+    
+      <category term="node.js" scheme="http://ywshz.github.io/myblog/tags/node-js/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[发布脚本那些事]]></title>
-    <link href="http://dycg.cnblogs.com/2016/01/07/%E5%8F%91%E5%B8%83%E8%84%9A%E6%9C%AC%E9%82%A3%E4%BA%9B%E4%BA%8B/"/>
-    <id>http://dycg.cnblogs.com/2016/01/07/发布脚本那些事/</id>
+    <link href="http://ywshz.github.io/myblog/2016/01/07/%E5%8F%91%E5%B8%83%E8%84%9A%E6%9C%AC%E9%82%A3%E4%BA%9B%E4%BA%8B/"/>
+    <id>http://ywshz.github.io/myblog/2016/01/07/发布脚本那些事/</id>
     <published>2016-01-07T02:50:48.000Z</published>
     <updated>2016-01-07T03:08:43.318Z</updated>
     <content type="html"><![CDATA[<h1 id="u53D1_u5E03_u90A3_u4E9B_u4E8B"><a href="#u53D1_u5E03_u90A3_u4E9B_u4E8B" class="headerlink" title="发布那些事"></a>发布那些事</h1><p>记忆力差, 记一下从写到发布的全过程吧(也就是Hexo -&gt; github)</p>
-<h3 id="u5199_u6587_u7AE0"><a href="#u5199_u6587_u7AE0" class="headerlink" title="写文章"></a>写文章</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd blog&#30446;&#24405;&#10;hexo new post &#25991;&#31456;&#26631;&#39064;</span><br></pre></td></tr></table></figure>
+<h3 id="u5199_u6587_u7AE0"><a href="#u5199_u6587_u7AE0" class="headerlink" title="写文章"></a>写文章</h3><figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd blog目录</span><br><span class="line">hexo <span class="built_in">new</span> <span class="built_in">post</span> 文章标题</span><br></pre></td></tr></table></figure>
 <p>在<strong>blog目录/source/_posts/</strong>下找到刚才标题的<strong>.md</strong>文章, 使用MD编辑器进行编辑</p>
 <h3 id="u672C_u5730_u9884_u89C8"><a href="#u672C_u5730_u9884_u89C8" class="headerlink" title="本地预览"></a>本地预览</h3><p>如果有必要的话<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure></p>
 <p>然后就可以打开<localhost:4000>访问了</localhost:4000></p>
@@ -33,14 +67,14 @@
     <![CDATA[<h1 id="u53D1_u5E03_u90A3_u4E9B_u4E8B"><a href="#u53D1_u5E03_u90A3_u4E9B_u4E8B" class="headerlink" title="发布那些事"></a>发布那些事</h1><p>记忆力差, 记一下从]]>
     </summary>
     
-      <category term="Hexo,发布" scheme="http://dycg.cnblogs.com/tags/Hexo-%E5%8F%91%E5%B8%83/"/>
+      <category term="Hexo,发布" scheme="http://ywshz.github.io/myblog/tags/Hexo-%E5%8F%91%E5%B8%83/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[终于在Github上安了个窝]]></title>
-    <link href="http://dycg.cnblogs.com/2016/01/07/hello-world/"/>
-    <id>http://dycg.cnblogs.com/2016/01/07/hello-world/</id>
+    <link href="http://ywshz.github.io/myblog/2016/01/07/hello-world/"/>
+    <id>http://ywshz.github.io/myblog/2016/01/07/hello-world/</id>
     <published>2016-01-07T02:30:46.990Z</published>
     <updated>2016-01-07T02:30:46.990Z</updated>
     <content type="html"><![CDATA[<p>经过了万般的努力,终于在Github上安了个窝,技术发展和年龄的发展一样的快呀!</p>
@@ -63,19 +97,19 @@
 <li>列表项3</li>
 </ol>
 </blockquote>
-<h3 id="u5F15_u7528"><a href="#u5F15_u7528" class="headerlink" title="引用"></a>引用</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62; &#36825;&#26159;&#24341;&#29992;</span><br></pre></td></tr></table></figure>
+<h3 id="u5F15_u7528"><a href="#u5F15_u7528" class="headerlink" title="引用"></a>引用</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="blockquote">&gt; 这是引用</span></span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>这是引用  </p>
 </blockquote>
 <h3 id="u94FE_u63A5_u548C_u56FE_u7247"><a href="#u94FE_u63A5_u548C_u56FE_u7247" class="headerlink" title="链接和图片"></a>链接和图片</h3><blockquote>
 <p>代码<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[<span class="link_label">百度</span>](<span class="link_url">www.baidu.com</span>)</span><br><span class="line">![<span class="link_label">百度</span>](<span class="link_url">https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png</span>)</span><br></pre></td></tr></table></figure></p>
-<p>结果<br><a href="/www.baidu.com">百度</a><br><img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png" alt="百度"></p>
+<p>结果<br><a href="/myblog/www.baidu.com">百度</a><br><img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png" alt="百度"></p>
 </blockquote>
 <h3 id="u7C97_u4F53_u4E0E_u659C_u4F53"><a href="#u7C97_u4F53_u4E0E_u659C_u4F53" class="headerlink" title="粗体与斜体"></a>粗体与斜体</h3><blockquote>
-<p>代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">**&#31895;&#20307;**&#10;&#26012;&#20307;&#39064;*</span><br></pre></td></tr></table></figure></p>
+<p>代码<br><figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">*</span><span class="keyword">*</span>粗体<span class="keyword">*</span><span class="keyword">*</span></span><br><span class="line">斜体题<span class="keyword">*</span></span><br></pre></td></tr></table></figure></p>
 <p>结果<br><strong>粗体</strong><br>斜体题*</p>
 </blockquote>
-<h3 id="u8868_u683C"><a href="#u8868_u683C" class="headerlink" title="表格"></a>表格</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">| Tables        | Are           | Cool  |&#10;| ------------- |:-------------:| -----:|&#10;| col 3 is      | right-aligned | $1600 |&#10;| col 2 is      | centered      |   $12 |&#10;| zebra stripes | are neat      |    $1 |</span><br></pre></td></tr></table></figure>
+<h3 id="u8868_u683C"><a href="#u8868_u683C" class="headerlink" title="表格"></a>表格</h3><figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">|<span class="string"> Tables        </span>|<span class="string"> Are           </span>|<span class="string"> Cool  </span>|</span><br><span class="line">|<span class="string"> ------------- </span>|<span class="string">:-------------:</span>|<span class="string"> -----:</span>|</span><br><span class="line">|<span class="string"> col 3 is      </span>|<span class="string"> right-aligned </span>|<span class="string"> $1600 </span>|</span><br><span class="line">|<span class="string"> col 2 is      </span>|<span class="string"> centered      </span>|<span class="string">   $12 </span>|</span><br><span class="line">|<span class="string"> zebra stripes </span>|<span class="string"> are neat      </span>|<span class="string">    $1 </span>|</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>结果</p>
 </blockquote>
@@ -106,7 +140,7 @@
 </tbody>
 </table>
 <h3 id="u4EE3_u7801"><a href="#u4EE3_u7801" class="headerlink" title="代码"></a>代码</h3><p>用3个`把你的代码包裹起来</p>
-<h3 id="u5206_u5272_u7EBF"><a href="#u5206_u5272_u7EBF" class="headerlink" title="分割线"></a>分割线</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">***</span><br></pre></td></tr></table></figure>
+<h3 id="u5206_u5272_u7EBF"><a href="#u5206_u5272_u7EBF" class="headerlink" title="分割线"></a>分割线</h3><figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span></span><br></pre></td></tr></table></figure>
 <p>如下:</p>
 <hr>
 <h3 id="u53CD_u659C_u6760_u8F6C_u4E49"><a href="#u53CD_u659C_u6760_u8F6C_u4E49" class="headerlink" title="反斜杠转义"></a>反斜杠转义</h3><p>*literal asterisks*</p>
